@@ -37,3 +37,12 @@ h1 {
 p {
   text-align: center;
 }
+
+ul {
+  margin: 0 auto;
+  width: 40%;
+}
+
+ul li {
+  padding: 10px 0;
+}
