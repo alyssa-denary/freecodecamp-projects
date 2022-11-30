@@ -2,6 +2,7 @@
   --darkGrey: rgb(58, 58, 58);
   --borderGrey: rgb(153, 151, 151);
   --codeGrey: rgb(248, 248, 248);
+  --codeTextGrey: rgb(115, 114, 114);
 }
 
 *,
@@ -13,6 +14,7 @@
 body {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 16px;
+  font-weight: 200;
   margin: 0;
 }
 
@@ -23,10 +25,12 @@ body :not(h1) :not(h2) {
 code {
   display: block;
   margin-left: 25px;
-  padding: 15px;
+  padding: 20px 15px;
   background-color: var(--codeGrey);
-  font-size: 14px;
+  font-size: 13px;
+  color: var(--codeTextGrey);
   border-radius: 2px;
+  line-height: 2;
 }
 
 h1,
@@ -39,6 +43,7 @@ h2 {
 }
 
 #heading {
+  color: rgb(0, 0, 0);
   font-size: 28px;
   text-align: center;
   width: 270px;

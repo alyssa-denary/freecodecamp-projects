@@ -128,23 +128,17 @@
         and _name.
       </p>
       <h2 id="declaring-variables">Declaring variables</h2>
-      <p>
-        You can declare a variable in three ways: <br />
-        With the keyword var. For example,
-      </p>
+      <p>You can declare a variable in three ways:</p>
+      <p>With the keyword var. For example,</p>
       <code>var x = 42.</code>
-      <p>
-        This syntax can be used to declare both local and global variables.
-        <br />
-
-        By simply assigning it a value. For example,
-      </p>
+      <p>This syntax can be used to declare both local and global variables.</p>
+      <p>By simply assigning it a value. For example,</p>
       <code>x = 42.</code>
       <p>
         This always declares a global variable. It generates a strict JavaScript
-        warning. You shouldn't use this variant. <br />
-        With the keyword let. For example,
+        warning. You shouldn't use this variant.
       </p>
+      <p>With the keyword let. For example,</p>
       <code>let y = 13.</code>
       <p>
         This syntax can be used to declare a block scope local variable. See
@@ -195,7 +189,7 @@
         identifier: it must start with a letter, underscore or dollar sign and
         can contain alphabetic, numeric, or underscore characters.
       </p>
-      <code></code>
+      <code>const PI = 3.14;</code>
       <p>
         A constant cannot change value through assignment or be re-declared
         while the script is running. It has to be initialized to a value. <br />
@@ -208,16 +202,18 @@
         variable in the same scope. For example:
       </p>
       <code
-        >// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL
-        CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements
-        }</code
+        >// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
+        <br />
+        WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g; <br />
+        //statements }</code
       >
       <p>
         However, object attributes are not protected, so the following statement
         is executed without problems.
       </p>
       <code
-        >const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";</code
+        >const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = <br />
+        "otherValue";</code
       >
       <h2 id="data-types">Data types</h2>
       <p>The latest ECMAScript standard defines seven data types:</p>
