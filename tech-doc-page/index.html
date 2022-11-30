@@ -19,6 +19,7 @@
         <li><a href="#declaring-variables">Declaring variables</a></li>
         <li><a href="#variable-scope">Variable scope</a></li>
         <li><a href="#global-variables">Global variables</a></li>
+        <li><a href="#constants">Constants</a></li>
       </ul>
     </nav>
     <main>
@@ -182,6 +183,37 @@
         document, you can refer to this variable from an iframe as
         parent.phoneNumber.
       </p>
+      <h2 id="constants">Constants</h2>
+      <p>
+        You can create a read-only, named constant with the const keyword. The
+        syntax of a constant identifier is the same as for a variable
+        identifier: it must start with a letter, underscore or dollar sign and
+        can contain alphabetic, numeric, or underscore characters.
+      </p>
+      <code></code>
+      <p>
+        A constant cannot change value through assignment or be re-declared
+        while the script is running. It has to be initialized to a value. <br />
+
+        The scope rules for constants are the same as those for let block scope
+        variables. If the const keyword is omitted, the identifier is assumed to
+        represent a variable. <br />
+
+        You cannot declare a constant with the same name as a function or
+        variable in the same scope. For example:
+      </p>
+      <code
+        >// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL
+        CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements
+        }</code
+      >
+      <p>
+        However, object attributes are not protected, so the following statement
+        is executed without problems.
+      </p>
+      <code
+        >const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";</code
+      >
     </main>
   </body>
 </html>
