@@ -1,7 +1,7 @@
 :root {
   --darkGrey: rgb(58, 58, 58);
   --borderGrey: rgb(153, 151, 151);
-  --codeGrey: rgb(204, 200, 200);
+  --codeGrey: rgb(248, 248, 248);
 }
 
 *,
@@ -12,7 +12,7 @@
 
 body {
   font-family: "Open Sans", Arial, sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   margin: 0;
 }
 
@@ -21,7 +21,12 @@ body :not(h1) :not(h2) {
 }
 
 code {
-  padding-left: 15px;
+  display: block;
+  margin-left: 25px;
+  padding: 15px;
+  background-color: var(--codeGrey);
+  font-size: 14px;
+  border-radius: 2px;
 }
 
 h1,
