@@ -1,3 +1,7 @@
+:root {
+  --darkGrey: rgb(52, 52, 52);
+}
+
 *,
 ::before,
 ::after {
@@ -5,6 +9,39 @@
 }
 
 body {
-  font-style: sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
+}
+
+body :not(h1) :not(h2) {
+  color: var(--darkGrey);
+}
+
+h1,
+h2 {
+  font-weight: 300;
+}
+
+.left {
+  position: fixed;
+  left: 0;
+  width: 280px;
+  padding: 5px;
+  margin: 0 10px;
+}
+
+main {
+  padding-left: 300px;
+}
+
+#nav {
+  margin-top: 25px;
+}
+
+#nav ul li {
+  list-style: none;
+}
+
+#nav ul li a {
+  text-decoration: none;
 }
