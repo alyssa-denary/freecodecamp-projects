@@ -1,6 +1,7 @@
 :root {
-  --darkGrey: rgb(52, 52, 52);
-  --borderGrey: rgb(100, 99, 99);
+  --darkGrey: rgb(58, 58, 58);
+  --borderGrey: rgb(153, 151, 151);
+  --codeGrey: rgb(204, 200, 200);
 }
 
 *,
@@ -11,7 +12,7 @@
 
 body {
   font-family: "Open Sans", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   margin: 0;
 }
 
@@ -19,15 +20,24 @@ body :not(h1) :not(h2) {
   color: var(--darkGrey);
 }
 
+code {
+  padding-left: 15px;
+}
+
 h1,
 h2 {
   font-weight: 300;
+}
+
+h2 {
+  font-size: 28px;
 }
 
 #heading {
   font-size: 28px;
   text-align: center;
   width: 270px;
+  margin-left: 10px;
 }
 
 html {
@@ -36,14 +46,15 @@ html {
 }
 
 #main {
-  padding-left: 300px;
+  margin-left: 300px;
+  padding: 10px 40px;
   overflow: scroll;
 }
 
 #nav {
   position: fixed;
   left: 0;
-  width: 280px;
+  width: 300px;
   border-right: 3px solid var(--borderGrey);
   overflow-y: scroll;
 }
@@ -63,4 +74,14 @@ html {
 
 #nav ul li a {
   text-decoration: none;
+}
+
+p {
+  padding-left: 10px;
+  line-height: 1.5;
+}
+
+main > ul li {
+  margin: 0px 0px 20px 15px;
+  line-height: 1.5;
 }
