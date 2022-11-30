@@ -1,5 +1,6 @@
 :root {
   --darkGrey: rgb(52, 52, 52);
+  --borderGrey: rgb(100, 99, 99);
 }
 
 *,
@@ -10,7 +11,8 @@
 
 body {
   font-family: "Open Sans", Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
+  margin: 0;
 }
 
 body :not(h1) :not(h2) {
@@ -22,24 +24,41 @@ h2 {
   font-weight: 300;
 }
 
-.left {
-  position: fixed;
-  left: 0;
-  width: 280px;
-  padding: 5px;
-  margin: 0 10px;
+#heading {
+  font-size: 28px;
+  text-align: center;
+  width: 270px;
 }
 
-main {
+html {
+  margin: 0;
+  padding: 0;
+}
+
+#main {
   padding-left: 300px;
+  overflow: scroll;
 }
 
 #nav {
-  margin-top: 25px;
+  position: fixed;
+  left: 0;
+  width: 280px;
+  border-right: 3px solid var(--borderGrey);
+  overflow-y: scroll;
+}
+
+#nav ul {
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
 }
 
 #nav ul li {
   list-style: none;
+  padding: 15px 10px 15px 30px;
+  border-top: 1px solid black;
+  position: relative;
 }
 
 #nav ul li a {
