@@ -1,0 +1,11 @@
+*,
+::before,
+::after {
+  border-style: border-box;
+}
+
+body {
+  font-style: sans-serif;
+  font-size: 14px;
+  
+}
