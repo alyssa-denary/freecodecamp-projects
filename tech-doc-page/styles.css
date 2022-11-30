@@ -61,6 +61,11 @@ html {
   overflow: scroll;
 }
 
+main > ul li {
+  margin: 0px 0px 20px 25px;
+  line-height: 1.5;
+}
+
 #nav {
   position: fixed;
   left: 0;
@@ -91,7 +96,7 @@ p {
   line-height: 1.5;
 }
 
-main > ul li {
-  margin: 0px 0px 20px 15px;
-  line-height: 1.5;
+.sub-bullet {
+  margin-left: 75px;
+  list-style-image: url("circle.svg");
 }
