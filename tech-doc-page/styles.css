@@ -101,5 +101,10 @@ p {
 
 .sub-bullet {
   margin-left: 75px;
-  list-style-image: url("circle.svg");
+  list-style: none;
+  background-image: url(circle-outline-svgrepo-com.svg);
+  background-repeat: no-repeat;
+  background-position: left top 9px;
+  background-size: 6px;
+  padding-left: 15px;
 }
