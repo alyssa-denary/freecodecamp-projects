@@ -147,7 +147,7 @@ body {
 }
 
 /*                     VIDEO STYLING                            */
-.section-video {
+#section-video {
   display: flex;
   justify-content: center;
   margin: 50px;
