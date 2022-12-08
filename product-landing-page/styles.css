@@ -1,8 +1,9 @@
 :root {
   --black: rgba(0, 0, 0, 1);
-  --eggshell: rgb(233, 231, 231);
-  --lightgrey: rgb(198, 196, 196);
-  --mutedyellow: rgb(237, 203, 35);
+  --eggshell: #eeee;
+  --iconOrange: #ff8c00;
+  --lightgrey: #dddd;
+  --mutedyellow: #f1c40f;
 }
 
 *,
@@ -84,4 +85,51 @@ body {
   padding: 5px 20px;
   text-transform: uppercase;
   width: max-content;
+}
+
+#features {
+  width: 80%;
+  margin: 0 auto 25px auto;
+  padding-left: 60px;
+}
+
+#features ul {
+  display: grid;
+  grid-template-rows: 3;
+  grid-auto-columns: 2;
+  column-gap: 40px;
+  row-gap: 60px;
+}
+
+.img {
+  grid-column: 1 / 2;
+}
+
+.img i {
+  color: var(--iconOrange);
+}
+
+.description {
+  grid-column: 2 / 3;
+}
+
+#d1 {
+  grid-row: 1 / 2;
+}
+
+#d2 {
+  grid-row: 2 / 3;
+}
+
+#d3 {
+  grid-row: 3 / 4;
+}
+
+.h3 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.h3-subtext {
+  font-size: 17px;
 }
