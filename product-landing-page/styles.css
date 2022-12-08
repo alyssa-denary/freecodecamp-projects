@@ -2,7 +2,7 @@
   --black: rgba(0, 0, 0, 1);
   --eggshell: rgb(233, 231, 231);
   --lightgrey: rgb(198, 196, 196);
-  --mutedyellow: rgb(222, 189, 22);
+  --mutedyellow: rgb(237, 203, 35);
 }
 
 *,
@@ -58,13 +58,14 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 200px;
-  padding: 30px 0;
+  height: 250px;
+  padding: 40px 0;
 }
 
 #email-form {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 #email {
@@ -74,8 +75,13 @@ body {
 }
 
 #email-submit {
-  flex-basis: 20px;
-  padding: 10px;
   background-color: var(--mutedyellow);
-  border-radius: 5px;
+  border: none;
+  border-radius: 2px;
+  font-size: 17px;
+  font-weight: 800;
+  min-width: 150px;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  width: max-content;
 }
