@@ -34,22 +34,22 @@ body {
 }
 
 #logo-img {
-  width: 350px;
   height: auto;
+  width: 350px;
 }
 
 #nav .ul {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around;
   font-family: sans-serif;
   font-size: 17px;
   flex-wrap: nowrap;
 }
 
 #nav .ul li {
-  white-space: nowrap;
   padding: 3px;
+  white-space: nowrap;
 }
 
 /*                  ALL LIST STYLING               */
@@ -59,31 +59,31 @@ body {
 }
 
 .li a {
-  text-decoration: none;
   color: var(--black);
+  text-decoration: none;
 }
 
 /*                  HEADING STYLING                  */
 
 #heading {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
+  flex-direction: column;
   height: 250px;
+  justify-content: flex-start;
   padding: 40px 0;
 }
 
 #email-form {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 
 #email {
-  width: 300px;
   height: 30px;
   margin: 15px;
+  width: 300px;
 }
 
 #email-submit {
@@ -101,8 +101,8 @@ body {
 /*                     FEATURES (PREMIUM MATERIALS, ETC.) STYLING             */
 
 #features {
-  width: 80%;
   margin: 0 auto 25px auto;
+  width: 80%;
 }
 
 #features ul {
@@ -165,18 +165,18 @@ body {
 #bass-trombone,
 #valve-trombone {
   border: 1px solid black;
-  width: 300px;
   height: 315px;
   margin: 15px;
   min-width: 250px;
   text-align: center;
+  width: 300px;
 }
 
 .trombone-name-container {
   background-color: var(--lightgrey);
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   height: 50px;
   text-transform: uppercase;
 }
@@ -189,18 +189,18 @@ body {
 }
 
 .type-description {
-  padding: 0 10px;
   line-height: 30px;
+  padding: 0 10px;
 }
 
 .select-button {
-  text-transform: uppercase;
-  background-color: var(--mutedyellow);
-  padding: 10px 20px;
-  border: none;
   align-self: flex-end;
+  background-color: var(--mutedyellow);
+  border: none;
   font-size: 18px;
   margin-top: 30px;
+  padding: 10px 20px;
+  text-transform: uppercase;
 }
 
 .select-button:hover {
@@ -210,15 +210,15 @@ body {
 /*                     FOOTER STYLING                            */
 
 #footer {
-  width: 70%;
-  margin: auto;
   background-color: var(--lightgrey);
+  margin: auto;
+  width: 70%;
 }
 
 #footer ul {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
+  justify-content: flex-end;
 }
 
 #footer ul li {
@@ -226,10 +226,10 @@ body {
 }
 
 .bottom-footer {
+  color: var(--textGray);
   display: flex;
   justify-content: flex-end;
   padding: 5px 10px 20px 0;
-  color: var(--textGray);
 }
 
 /* Type/Price boxes stack on top of each other */
@@ -248,9 +248,9 @@ body {
 @media (max-width: 650px) {
   #nav .ul {
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
   }
 }
 
@@ -266,9 +266,9 @@ body {
   }
 
   #features {
-    width: 100%;
     padding-left: 0px;
     text-align: center;
+    width: 100%;
   }
 
   #features ul {
