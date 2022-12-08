@@ -21,19 +21,38 @@ body {
   color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 16px;
+  min-width: 340px;
 }
+
+/*         NAV BAR STYLING               */
 
 #nav {
   display: grid;
   grid-template-columns: 68% 32%;
   grid-template-rows: 100%;
-  padding: 20px 0 0 10px;
+  padding: 15px 10px 0 10px;
 }
 
 #logo-img {
   width: 350px;
   height: auto;
 }
+
+#nav .ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 17px;
+  flex-wrap: nowrap;
+}
+
+#nav .ul li {
+  white-space: nowrap;
+  padding: 3px;
+}
+
+/*                  ALL LIST STYLING               */
 
 .ul {
   list-style: none;
@@ -44,13 +63,7 @@ body {
   color: var(--black);
 }
 
-#nav ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-family: sans-serif;
-  font-size: 17px;
-}
+/*                  HEADING STYLING                  */
 
 #heading {
   display: flex;
@@ -85,10 +98,11 @@ body {
   width: max-content;
 }
 
+/*                     FEATURES (PREMIUM MATERIALS, ETC.) STYLING             */
+
 #features {
   width: 80%;
   margin: 0 auto 25px auto;
-  padding-left: 60px;
 }
 
 #features ul {
@@ -107,7 +121,7 @@ body {
   color: var(--iconOrange);
 }
 
-.description {
+.feat-description {
   grid-column: 2 / 3;
 }
 
@@ -132,11 +146,14 @@ body {
   font-size: 17px;
 }
 
+/*                     VIDEO STYLING                            */
 .section-video {
   display: flex;
   justify-content: center;
   margin: 50px;
 }
+
+/*                     TYPES OF TROMBONES WITH PRICES STYLING                            */
 
 #types {
   display: flex;
@@ -151,6 +168,7 @@ body {
   width: 300px;
   height: 315px;
   margin: 15px;
+  min-width: 250px;
   text-align: center;
 }
 
@@ -170,7 +188,7 @@ body {
   margin: 15px;
 }
 
-.description {
+.type-description {
   padding: 0 10px;
   line-height: 30px;
 }
@@ -188,6 +206,8 @@ body {
 .select-button:hover {
   background-color: var(--orangeYellow);
 }
+
+/*                     FOOTER STYLING                            */
 
 #footer {
   width: 70%;
@@ -210,4 +230,52 @@ body {
   justify-content: flex-end;
   padding: 5px 10px 20px 0;
   color: var(--textGray);
+}
+
+/* Type/Price boxes stack on top of each other */
+@media (max-width: 800px) {
+  #types {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #footer {
+    width: 100%;
+  }
+}
+
+/* Nav links stack */
+@media (max-width: 650px) {
+  #nav .ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* Logo stacks on top of nav links, no icons*/
+@media (max-width: 600px) {
+  #nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img {
+    display: none;
+  }
+
+  #features {
+    width: 100%;
+    padding-left: 0px;
+    text-align: center;
+  }
+
+  #features ul {
+    grid-auto-columns: 1;
+  }
+
+  .feat-description {
+    grid-column: 1 / 2;
+  }
 }
