@@ -5,6 +5,7 @@
   --lightgrey: #dddd;
   --mutedyellow: #f1c40f;
   --orangeYellow: #ffa500;
+  --textGray: rgb(105, 105, 105);
 }
 
 *,
@@ -140,6 +141,7 @@ body {
 #types {
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 #tenor-trombone,
@@ -185,4 +187,27 @@ body {
 
 .select-button:hover {
   background-color: var(--orangeYellow);
+}
+
+#footer {
+  width: 70%;
+  margin: auto;
+  background-color: var(--lightgrey);
+}
+
+#footer ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#footer ul li {
+  padding: 15px 15px 5px 15px;
+}
+
+.bottom-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px 10px 20px 0;
+  color: var(--textGray);
 }
