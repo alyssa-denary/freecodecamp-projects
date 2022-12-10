@@ -1,0 +1,25 @@
+{
+  "name": "product-revamp",
+  "version": "1.0.0",
+  "description": "for revamp of trombone website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass -w sass/main.scss css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alyssa-denary/freecodecamp-projects.git#main"
+  },
+  "keywords": [
+    "trombone"
+  ],
+  "author": "Alyssa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alyssa-denary/freecodecamp-projects/issues"
+  },
+  "homepage": "https://github.com/alyssa-denary/freecodecamp-projects/tree/main#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
