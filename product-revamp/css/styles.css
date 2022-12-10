@@ -1,75 +1,75 @@
 *,
 *::before,
 *::after {
+  box-sizing: inherit;
   margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
+  padding: 0; }
 
 html {
   font-size: 80%; }
 
 #body {
   box-sizing: border-box;
+  color: #777;
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  line-height: 1.7;
-  color: #777; }
+  line-height: 1.7; }
 
 .header {
-  height: 100vh;
   backface-visibility: hidden;
   background-image: url(https://www.rpo.co.uk/images/63ebc391-ca20-4a85-9fc3-17bb7cd9b5f2_copy.jpg);
+  background-position: top;
   background-size: cover;
-  background-position: top; }
+  height: 100vh; }
 
 .header__logo-box {
   position: absolute;
-  top: 4rem;
-  left: 4rem; }
+  left: 4rem;
+  top: 4rem; }
 
 .header__logo {
   height: 3.5rem; }
 
 .header__trombone {
   animation: 1s ease-in 0s backwards fadeIn;
+  background-image: linear-gradient(to right, rgba(244, 244, 30, 0.8), rgba(205, 173, 13, 0.8));
+  background-position: top;
+  background-size: cover;
   height: 100vh;
-  width: 95vw;
+  margin-top: 3rem;
   position: absolute;
   top: 40%;
   left: 50%;
-  margin-top: 3rem;
   transform: translate(-50%, -50%);
-  background-image: linear-gradient(to right, rgba(244, 244, 30, 0.8), rgba(205, 173, 13, 0.8));
-  background-size: cover;
-  background-position: top;
+  width: 95vw;
   clip-path: polygon(97% 7%, 98% 90%, 97% 87%, 96% 86%, 94% 83%, 93% 81%, 92% 79%, 90% 78%, 89% 76%, 88% 75%, 87% 73%, 85% 72%, 84% 71%, 83% 70%, 82% 70%, 80% 69%, 79% 68%, 80% 73%, 81% 76%, 81% 81%, 79% 84%, 77% 87%, 75% 88%, 71% 88%, 67% 88%, 67% 93%, 63% 93%, 63% 88%, 50% 88%, 50% 93%, 46% 93%, 46% 88%, 35% 88%, 32% 86%, 31% 84%, 30% 82%, 29% 81%, 28% 79%, 27% 74%, 27% 67%, 17% 67%, 13% 74%, 13% 37%, 16% 43%, 45% 43%, 45% 29%, 42% 29%, 42% 24%, 52% 24%, 52% 29%, 50% 29%, 50% 42%, 54% 42%, 59% 42%, 63% 42%, 63% 29%, 60% 29%, 60% 24%, 71% 24%, 71% 29%, 68% 29%, 68% 42%, 75% 41%, 78% 38%, 80% 36%, 82% 32%, 84% 30%, 86% 28%, 87% 26%, 89% 23%, 91% 21%, 94% 15%, 95% 12%, 96% 10%, 97% 8%); }
 
 .header__text-box {
   position: absolute;
   top: 58%;
   left: 55%;
-  transform: translate(-50%, -50%);
-  text-align: center; }
+  text-align: center;
+  transform: translate(-50%, -50%); }
 
 .heading-primary {
   color: #fff;
   text-transform: uppercase; }
 
 .heading-primary--main {
+  animation: 0.5s ease-out 0.25s backwards fadeIn;
   display: block;
   font-size: 3rem;
   font-weight: 400;
   letter-spacing: 1rem;
-  animation: 0.5s ease-out 0.25s backwards fadeIn;
   padding-left: 7rem;
   width: max-content; }
 
 .heading-primary--sub {
+  animation: 0.5s ease-out 0.25s backwards fadeIn;
   display: block;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1.75rem;
-  animation: 0.5s ease-out 0.25s backwards fadeIn;
   width: max-content; }
 
 @keyframes fadeIn {
@@ -86,21 +86,21 @@ html {
 
 .btn:link,
 .btn:visited {
+  border-radius: 10rem;
+  display: inline-block;
+  padding: 1.5rem 4rem;
+  position: relative;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1.5rem 4rem;
-  display: inline-block;
-  border-radius: 10rem;
-  transition: all 0.2s;
-  position: relative; }
+  transition: all 0.2s; }
 
 .btn:hover {
-  transform: translate(-20%, 10%);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  transform: translate(-20%, 10%); }
 
 .btn:active {
-  transform: translate(-20%, 25%);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  transform: translate(-20%, 25%); }
 
 .btn--white {
   background-color: #fff;

@@ -1,14 +1,14 @@
 $color-gold: #cdad0d;
-$color-yellow: #f4f41e;
 $color-grey-dark: #777;
 $color-white: #fff;
+$color-yellow: #f4f41e;
 
 *,
 *::before,
 *::after {
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
 }
 
 html {
@@ -17,24 +17,24 @@ html {
 
 #body {
   box-sizing: border-box;
+  color: $color-grey-dark;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: $color-grey-dark;
 }
 
 .header {
-  height: 100vh;
   backface-visibility: hidden;
   background-image: url(https://www.rpo.co.uk/images/63ebc391-ca20-4a85-9fc3-17bb7cd9b5f2_copy.jpg);
-  background-size: cover;
   background-position: top;
+  background-size: cover;
+  height: 100vh;
 }
 
 .header__logo-box {
   position: absolute;
-  top: 4rem;
   left: 4rem;
+  top: 4rem;
 }
 
 .header__logo {
@@ -43,20 +43,20 @@ html {
 
 .header__trombone {
   animation: 1s ease-in 0s backwards fadeIn;
-  height: 100vh;
-  width: 95vw;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  margin-top: 3rem;
-  transform: translate(-50%, -50%);
   background-image: linear-gradient(
     to right,
     rgba($color-yellow, 0.8),
     rgba($color-gold, 0.8)
   );
-  background-size: cover;
   background-position: top;
+  background-size: cover;
+  height: 100vh;
+  margin-top: 3rem;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95vw;
   clip-path: polygon(
     97% 7%,
     98% 90%,
@@ -140,8 +140,8 @@ html {
   position: absolute;
   top: 58%;
   left: 55%;
-  transform: translate(-50%, -50%);
   text-align: center;
+  transform: translate(-50%, -50%);
 }
 
 .heading-primary {
@@ -150,21 +150,21 @@ html {
 }
 
 .heading-primary--main {
+  animation: 0.5s ease-out 0.25s backwards fadeIn;
   display: block;
   font-size: 3rem;
   font-weight: 400;
   letter-spacing: 1rem;
-  animation: 0.5s ease-out 0.25s backwards fadeIn;
   padding-left: 7rem;
   width: max-content;
 }
 
 .heading-primary--sub {
+  animation: 0.5s ease-out 0.25s backwards fadeIn;
   display: block;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1.75rem;
-  animation: 0.5s ease-out 0.25s backwards fadeIn;
   width: max-content;
 }
 
@@ -188,23 +188,23 @@ html {
 
 .btn:link,
 .btn:visited {
+  border-radius: 10rem;
+  display: inline-block;
+  padding: 1.5rem 4rem;
+  position: relative;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1.5rem 4rem;
-  display: inline-block;
-  border-radius: 10rem;
   transition: all 0.2s;
-  position: relative;
 }
 
 .btn:hover {
-  transform: translate(-20%, 10%);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  transform: translate(-20%, 10%);
 }
 
 .btn:active {
-  transform: translate(-20%, 25%);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  transform: translate(-20%, 25%);
 }
 
 .btn--white {
